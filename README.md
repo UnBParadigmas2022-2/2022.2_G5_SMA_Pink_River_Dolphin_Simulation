@@ -8,7 +8,7 @@
 
 
 
-<img src="https://user-images.githubusercontent.com/72623771/214437760-436b2238-1b56-4919-a2a4-149bd522aa4e.png" min-width="350px" max-width="350px" width="350px" align="right" alt="Computador LeticiaAires">
+<img src="https://user-images.githubusercontent.com/72623771/214444939-651a794f-e3fa-4f79-96e8-5e21fa6f34cb.png" min-width="350px" max-width="350px" width="350px" align="right" alt="Computador LeticiaAires">
 
 
 
@@ -62,6 +62,8 @@ https://github.com/UnBParadigmas2022-2/2022.2_G5_SMA_Pink_River_Dolphin_Simulati
 
 ````
 ````
+### E pronto! Você já pode visualizar a simulação .<br>
+![](https://github.com/UnBParadigmas2022-2/2022.2_G5_SMA_Pink_River_Dolphin_Simulation/blob/main/assets/pink-dolphin.gif)
 
 ## Vídeo
 

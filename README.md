@@ -2,7 +2,7 @@
 
 **Disciplina**: FGA0210 - PARADIGMAS DE PROGRAMAÇÃO - T01 <br>
 
-**Nro do Grupo (de acordo com a Planilha de Divisão dos Grupos)**: 05<br>
+**Nro do Grupo**: 05<br>
 
 **Paradigma**: Sistema Multiagentes<br>
 

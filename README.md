@@ -62,7 +62,7 @@ https://github.com/UnBParadigmas2022-2/2022.2_G5_SMA_Pink_River_Dolphin_Simulati
 
 ````
 ````
-### E pronto! Você já pode visualizar a simulação .<br>
+### E pronto, você já pode visualizar a simulação! <br>
 ![](https://github.com/UnBParadigmas2022-2/2022.2_G5_SMA_Pink_River_Dolphin_Simulation/blob/main/assets/pink-dolphin.gif)
 
 ## Uso 

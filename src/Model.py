@@ -8,7 +8,7 @@ from src.WaterAgent import WaterAgent
 
 
 class Model(Model):
-    def __init__(self, num_agents, width, height):
+    def __init__(self, num_agents, width = 15, height = 15,):
         self.num_agents = num_agents
         self.grid = MultiGrid(width, height, True)
         self.width = width

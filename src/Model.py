@@ -5,10 +5,10 @@ from mesa import Model
 from src.PinkDolphinAgent import PinkDolphinAgent
 from src.ShoalAgent import ShoalAgent
 from src.WaterAgent import WaterAgent
-
+from src.Poluente import Poluente
 
 class Model(Model):
-    def __init__(self, num_agents, width = 15, height = 15,):
+    def __init__(self, num_agents,num_poluentes,  width = 15, height = 15):
         self.num_agents = num_agents
         self.grid = MultiGrid(width, height, True)
         self.width = width
@@ -16,8 +16,10 @@ class Model(Model):
         self.schedule = RandomActivation(self)
         self.running = True
         self.steps = 0
+        self.numero_poluentes = num_poluentes
         self.init_agent(PinkDolphinAgent, 5)
         self.init_agent(ShoalAgent, self.num_agents)
+        self.init_agent(Poluente, self.numero_poluentes)
         self.init_water(WaterAgent)
 
     def init_water(self,Agent):
@@ -44,6 +46,7 @@ class Model(Model):
                 self.grid.place_agent(agent, self.grid.find_empty())
 
     def step(self):
+
         if self.steps == 10:
             self.reset_steps()
         else:

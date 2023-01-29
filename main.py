@@ -7,14 +7,23 @@ from src.Model import Model
 
 
 def portrayal_method(agent):
-    portrayal = {"Filled": "true", "Layer": 0, "w": 1, "h": 1}
+    portrayal = {
+        "Filled": "true", 
+        "Layer": 0, 
+        "w": 1, 
+        "h": 1,
+    }
+
     if type(agent) is ShoalAgent:
         if not agent.eated:
             portrayal["Shape"] = "assets/cardume.png"
+
     elif type(agent) is PinkDolphinAgent:
         portrayal["Shape"] = "assets/pink_dolphin.jpg"
+
     elif type(agent) is WaterAgent:
-        portrayal["Shape"] = "assets/water.png"
+        portrayal["Shape"] = "rect"
+        portrayal["Color"] = "blue"
     return portrayal
 
 

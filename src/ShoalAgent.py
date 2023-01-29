@@ -13,6 +13,8 @@ class ShoalAgent(Agent):
             self.give_food()
             if self.eated:
                 self.model.grid.remove_agent(self)
+                self.model.init_agent(WaterAgent, 1)
+
             else:
                 self.check_if_its_surrounded_by_polution()
                 self.analyze_water_quality()
@@ -68,4 +70,3 @@ class ShoalAgent(Agent):
                     break
         except:
             pass
-

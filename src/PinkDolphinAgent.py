@@ -48,9 +48,6 @@ class PinkDolphinAgent(Agent):
         new_position = self.get_new_position(possible_walk_pos, self.pos)
 
         self.model.grid.move_agent(self, new_position)
-        #print(new_position)
-        #print(format(self.breed), "Procurar cardume")
-        #print(f"posso andar para {possible_walk_pos}")
 
     def get_new_position(self, possible_walk_pos, current_pos):
         next_pos = None
@@ -99,9 +96,6 @@ class PinkDolphinAgent(Agent):
     def get_food_agent(self, pos):
         try:
             this_cell = self.model.grid.get_cell_list_contents([pos])
-            #print("#########################")
-            #print(this_cell,len(this_cell))
-            #print("#########################")
             return [obj for obj in this_cell if not isinstance(obj, PinkDolphinAgent) or isinstance(obj, WaterAgent)]
         except:
             return []

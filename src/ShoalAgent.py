@@ -15,6 +15,7 @@ class ShoalAgent(Agent):
                 self.model.grid.remove_agent(self)
             else:
                 self.analyze_water_quality()
+                # self.procuraLixo()
         except:
             pass
 
@@ -36,14 +37,17 @@ class ShoalAgent(Agent):
         try:
             next_pos = self.model.grid.get_neighborhood(self.pos, moore=True, include_center=False, radius=1)
             next_pos_content = self.model.grid.get_neighbors(self.pos, moore=True, include_center=False, radius=1)
-            highest_quality_cell = [None, 0]
-            for idx, cell in enumerate(next_pos_content):
-                if isinstance(cell, WaterAgent):
-                    if cell.qualidade >= highest_quality_cell[1]:
-                        highest_quality_cell = [idx, cell.qualidade]
-            if highest_quality_cell != [None, 0]:
-                print(next_pos[highest_quality_cell[0]])
-                self.model.grid.move_agent(self, next_pos[highest_quality_cell[0]])
-
+            lowest_quality_cell = [None, 5]
+            for idx, agent in enumerate(next_pos_content):
+                if type(agent) is WaterAgent:
+                    if agent.qualidade < lowest_quality_cell[1]:
+                        lowest_quality_cell = [idx, agent.qualidade]
+            if lowest_quality_cell[1] < 5:
+                for idx, x in enumerate(next_pos_content):
+                  if idx != lowest_quality_cell[0]:
+                    self.model.grid.move_agent(next_pos_content[idx], self.pos)
+                    self.model.grid.move_agent(self, next_pos[idx])
+                    break
         except:
-            print('error when calling analyze_water_quality')
+            pass
+                

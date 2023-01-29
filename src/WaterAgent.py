@@ -1,22 +1,26 @@
-from src.PinkDolphinAgent import PinkDolphinAgent
+from mesa import Agent
 
+class WaterAgent(Agent):
 
-class WaterAgent(PinkDolphinAgent):
-    breed = "Agua"
-    energy = 22
-    moore = True
-    radius = 3
-    walk_radius = 2
-    energy_loss = 2
-
-    def __init__(self, unique_id, model):
-        super().__init__(
-            unique_id,
-            model,
-            self.breed,
-            self.energy,
-            self.moore,
-            self.radius,
-            self.walk_radius,
-            self.energy_loss,
-        )
+    def __init__(self, unique_id, model,temperatura = 20,qualidade = 5):
+        super().__init__(unique_id,model)
+        self.temperatura = temperatura,
+        self.qualidade = qualidade
+    
+    def perdeQualidade(self):
+        self.qualidade -= 1
+        return self.qualidade
+    
+    def aumentaQualidade(self):
+        self.qualidade += 1
+        return self.qualidade
+    
+    def aumentaTemperatura(self):
+        self.temperatura += 5
+        return self.temperatura
+    
+    def diminuiTemperatura(self):
+        self.temperatura -= 5
+        return self.temperatura
+    
+    

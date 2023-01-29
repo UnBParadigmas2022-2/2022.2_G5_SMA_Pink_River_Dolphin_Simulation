@@ -39,6 +39,9 @@ def portrayal_method(agent):
     return portrayal
 
 model_params = {
+    "num_dolphin": mesa.visualization.Slider(
+        "População de Botos", 5, 1, 20
+    ),
     "num_agents": mesa.visualization.Slider(
         "População Inicial de cardumes", 10, 10, 30
     ),

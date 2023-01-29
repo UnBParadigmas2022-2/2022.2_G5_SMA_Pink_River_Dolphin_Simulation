@@ -48,9 +48,6 @@ class PinkDolphinAgent(Agent):
         new_position = self.get_new_position(possible_walk_pos, self.pos)
 
         self.model.grid.move_agent(self, new_position)
-        #print(new_position)
-        #print(format(self.breed), "Procurar cardume")
-        #print(f"posso andar para {possible_walk_pos}")
 
     def get_new_position(self, possible_walk_pos, current_pos):
         next_pos = None

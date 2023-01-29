@@ -59,7 +59,7 @@ model_params = {
     ),
 }
 
-grid = CanvasGrid(portrayal_method, 15, 15, 600, 600)
+grid = CanvasGrid(portrayal_method, 25, 25, 600, 600)
 
 server = ModularServer(
     Model, [grid], "Pink Dolphin", model_params

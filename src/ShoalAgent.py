@@ -1,4 +1,5 @@
 from mesa import Agent
+from src.WaterAgent import WaterAgent
 
 
 class ShoalAgent(Agent):

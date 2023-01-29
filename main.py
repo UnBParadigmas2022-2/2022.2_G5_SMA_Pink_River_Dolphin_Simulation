@@ -3,6 +3,7 @@ from mesa.visualization.ModularVisualization import ModularServer
 from src.ShoalAgent import ShoalAgent
 from src.PinkDolphinAgent import PinkDolphinAgent
 from src.WaterAgent import WaterAgent
+from src.Poluente import Poluente
 from src.Model import Model
 import mesa
 
@@ -22,18 +23,27 @@ def portrayal_method(agent):
         portrayal["Shape"] = "assets/pink_dolphin.jpg"
 
     elif type(agent) is WaterAgent:
-        if agent.qualidade == 5:
+        if agent.qualidade == 2:
             portrayal["Shape"] = "rect"
-            portrayal["Color"] = "blue"
-        else:
+            portrayal["Color"] = "yellow"
+        elif agent.qualidade == 1:
             portrayal["Shape"] = "rect"
             portrayal["Color"] = "green"
+        else:
+            portrayal["Shape"] = "rect"
+            portrayal["Color"] = "blue"
+
+    elif type(agent) is Poluente:
+        portrayal["Shape"] = "assets/trash.png"
 
     return portrayal
 
 model_params = {
     "num_agents": mesa.visualization.Slider(
         "População Inicial de cardumes", 10, 10, 30
+    ),
+    "num_poluentes": mesa.visualization.Slider(
+        "Quantidade de poluentes", 1, 1, 5
     ),
 }
 

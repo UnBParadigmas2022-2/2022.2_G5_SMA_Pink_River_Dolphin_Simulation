@@ -9,7 +9,7 @@ from src.Poluente import Poluente
 from src.FisherAgent import FisherAgent
 
 class Model(Model):
-    def __init__(self, num_dolphin,num_agents,num_poluentes,  width = 15, height = 15):
+    def __init__(self, num_dolphin,num_agents,num_poluentes,  width = 25, height = 25):
         self.num_agents = num_agents
         self.num_dolphin = num_dolphin
         self.grid = MultiGrid(width, height, True)

@@ -7,6 +7,11 @@ from src.Poluente import Poluente
 from src.Model import Model
 import mesa
 
+descricao = "Seguindo a temática de animais em risco de extinção aplicada nas duas últimas entregas, \
+decidimos desenvolver um sistema que simule as rotas migratórias do Boto Cor de Rosa, \
+tendo como base determinadas complicações por nós estabelecidas, \
+como a qualidade da água, a disponibilidade de comida e a presença de pescadores."
+
 def portrayal_method(agent):
     portrayal = {
         "Filled": "true", 
@@ -52,5 +57,6 @@ grid = CanvasGrid(portrayal_method, 15, 15, 600, 600)
 server = ModularServer(
     Model, [grid], "Pink Dolphin", model_params
 )
+server.description = descricao
 server.port = 8001
 server.launch()

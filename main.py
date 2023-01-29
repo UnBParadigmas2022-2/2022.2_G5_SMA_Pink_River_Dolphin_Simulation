@@ -5,6 +5,7 @@ from src.PinkDolphinAgent import PinkDolphinAgent
 from src.WaterAgent import WaterAgent
 from src.Poluente import Poluente
 from src.Model import Model
+from src.FisherAgent import FisherAgent
 import mesa
 
 descricao = "Seguindo a temática de animais em risco de extinção aplicada nas duas últimas entregas, \
@@ -26,6 +27,9 @@ def portrayal_method(agent):
 
     elif type(agent) is PinkDolphinAgent:
         portrayal["Shape"] = "assets/pink_dolphin.jpg"
+    
+    elif type(agent) is FisherAgent:
+        portrayal["Shape"] = "assets/fisher.png"
 
     elif type(agent) is WaterAgent:
         if agent.qualidade == 2:

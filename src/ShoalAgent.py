@@ -12,6 +12,8 @@ class ShoalAgent(Agent):
             self.give_food()
             if self.eated:
                 self.model.grid.remove_agent(self)
+            else:
+                self.analyze_water_quality()
         except:
             pass
 
@@ -28,3 +30,19 @@ class ShoalAgent(Agent):
             return [obj for obj in this_cell if not isinstance(obj, ShoalAgent)]
         except:
             return []
+
+    def analyze_water_quality(self):
+        try:
+            next_pos = self.model.grid.get_neighborhood(self.pos, moore=True, include_center=False, radius=1)
+            next_pos_content = self.model.grid.get_neighbors(self.pos, moore=True, include_center=False, radius=1)
+            highest_quality_cell = [None, 0]
+            for idx, cell in enumerate(next_pos_content):
+                if isinstance(cell, WaterAgent):
+                    if cell.qualidade >= highest_quality_cell[1]:
+                        highest_quality_cell = [idx, cell.qualidade]
+            if highest_quality_cell != [None, 0]:
+                print(next_pos[highest_quality_cell[0]])
+                self.model.grid.move_agent(self, next_pos[highest_quality_cell[0]])
+
+        except:
+            print('error when calling analyze_water_quality')

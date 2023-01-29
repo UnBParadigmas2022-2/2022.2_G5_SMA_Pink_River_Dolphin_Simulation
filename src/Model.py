@@ -6,6 +6,7 @@ from src.PinkDolphinAgent import PinkDolphinAgent
 from src.ShoalAgent import ShoalAgent
 from src.WaterAgent import WaterAgent
 from src.Poluente import Poluente
+from src.FisherAgent import FisherAgent
 
 class Model(Model):
     def __init__(self, num_dolphin,num_agents,num_poluentes,  width = 15, height = 15):
@@ -21,6 +22,7 @@ class Model(Model):
         self.init_agent(PinkDolphinAgent, self.num_dolphin)
         self.init_agent(ShoalAgent, self.num_agents)
         self.init_agent(Poluente, self.numero_poluentes)
+        self.init_agent(FisherAgent, 1)
         self.init_water(WaterAgent)
 
     def init_water(self,Agent):
@@ -39,11 +41,13 @@ class Model(Model):
         print(self.height*self.width - cont)
 
     def init_agent(self, Agent, num_agents):
+        print("funcionou", Agent)
         for i in range(num_agents):
             id = uuid.uuid1()
             agent = Agent(id, self)
             self.schedule.add(agent)
             if self.grid.exists_empty_cells():
+                print("entrou")
                 self.grid.place_agent(agent, self.grid.find_empty())
 
     def step(self):
@@ -57,3 +61,4 @@ class Model(Model):
     def reset_steps(self):
         self.steps = 0
         self.init_agent(ShoalAgent, self.num_agents)
+        self.init_agent(FisherAgent, self.num_agents)

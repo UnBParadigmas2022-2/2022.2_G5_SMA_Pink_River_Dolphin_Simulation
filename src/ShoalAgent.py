@@ -14,6 +14,7 @@ class ShoalAgent(Agent):
             if self.eated:
                 self.model.grid.remove_agent(self)
             else:
+                self.check_if_its_surrounded_by_polution()
                 self.analyze_water_quality()
                 # self.procuraLixo()
         except:
@@ -36,11 +37,24 @@ class ShoalAgent(Agent):
         except:
             return []
 
+    def check_if_its_surrounded_by_polution(self):
+        neighbors = self.model.grid.get_neighbors(self.pos, moore=False, include_center=False, radius=1)
+        is_surrounded_by_polution = True
+        for agent in neighbors:
+            if type(agent) is WaterAgent:
+                if agent.qualidade > 1:
+                    is_surrounded_by_polution = False
+        if is_surrounded_by_polution:
+            self.model.grid.remove_agent(self)
+            self.model.schedule.remove(self)
+            self.model.init_agent(WaterAgent, 1)
+
     def analyze_water_quality(self):
         try:
             next_pos = self.model.grid.get_neighborhood(self.pos, moore=True, include_center=False, radius=1)
             next_pos_content = self.model.grid.get_neighbors(self.pos, moore=True, include_center=False, radius=1)
             random.shuffle(next_pos_content)
+
             lowest_quality_cell = [None, 5]
             for idx, agent in enumerate(next_pos_content):
                 if type(agent) is WaterAgent:
@@ -54,3 +68,4 @@ class ShoalAgent(Agent):
                     break
         except:
             pass
+

@@ -107,3 +107,4 @@ class PinkDolphinAgent(Agent):
         for agent in self.model.grid.get_cell_list_contents([self.pos]):
             if type(agent) is agent_type and agent != self:
                 return agent
+

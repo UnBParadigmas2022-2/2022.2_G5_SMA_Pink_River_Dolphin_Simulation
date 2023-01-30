@@ -39,7 +39,6 @@ class WaterAgent(Agent):
     
     def procuraPoluente(self):
         for agent in self.model.grid.get_neighbors(self.pos,moore = False):
-            print("--------------------")
             if type(agent) is Poluente:
                 self.perdeQualidade()
             

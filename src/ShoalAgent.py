@@ -14,6 +14,7 @@ class ShoalAgent(Agent):
             if self.eated:
                 self.model.grid.remove_agent(self)
             else:
+                self.check_if_its_surrounded_by_polution()
                 self.analyze_water_quality()
                 # self.procuraLixo()
         except:
@@ -32,6 +33,18 @@ class ShoalAgent(Agent):
             return [obj for obj in this_cell if not isinstance(obj, ShoalAgent)]
         except:
             return []
+
+    def check_if_its_surrounded_by_polution(self):
+        neighbors = self.model.grid.get_neighbors(self.pos, moore=False, include_center=False, radius=1)
+        is_surrounded_by_polution = True
+        for agent in neighbors:
+            if type(agent) is WaterAgent:
+                if agent.qualidade > 1:
+                    is_surrounded_by_polution = False
+        if is_surrounded_by_polution:
+            self.model.grid.remove_agent(self)
+            self.model.schedule.remove(self)
+            self.model.init_agent(WaterAgent, 1)
 
     def analyze_water_quality(self):
         try:

@@ -51,11 +51,6 @@ class Model(Model):
                 self.grid.place_agent(agent, self.grid.find_empty())
 
     def step(self):
-        if self.steps == 10:
-            self.reset_steps()
-        else:
-            self.steps += 1
-
         self.schedule.step()
 
     def reset_steps(self):

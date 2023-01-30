@@ -19,6 +19,9 @@ class ShoalAgent(Agent):
         except:
             pass
 
+    def come(self):
+        self.model.grid.remove_agent()
+
     def give_food(self):
         species = self.get_specie_agent(self.pos)
         if len(species) > 0:

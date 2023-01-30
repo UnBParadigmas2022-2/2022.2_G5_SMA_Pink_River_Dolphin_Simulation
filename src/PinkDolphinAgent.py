@@ -2,7 +2,6 @@ from mesa import Agent
 from src.WaterAgent import WaterAgent
 import random
 
-
 class PinkDolphinAgent(Agent):
     breed = None
     energy = None
@@ -37,11 +36,11 @@ class PinkDolphinAgent(Agent):
 
     def step(self):
         try:
-            # 
             self.energy -= self.energy_loss
             self.analise_de_energia_botonica()
             self.procura_bobby_fisher()
             self.analise_agua()
+            self.procura_food()
         except:
             pass
     
@@ -57,7 +56,7 @@ class PinkDolphinAgent(Agent):
 
     def migrate(self):
         print("-------MIGRATEEEEEE---------")
-
+        self.fugindo = True
         rand_pos = self.get_good_pos()
         print(f"###### RAND {rand_pos} SELFPOS {self.pos} PRE {self.pre}")
         pre = self.pre
@@ -77,7 +76,6 @@ class PinkDolphinAgent(Agent):
                 if agent.qualidade <= 2:
                     # água ruim MIGRA
                     return True
-                
         return False
 
     def analise_de_energia_botonica(self):
@@ -91,9 +89,18 @@ class PinkDolphinAgent(Agent):
                     # pescador perto MIGRA
                     self.migrate()
 
-    def random_walk(self):
-        pass
 
+    def procura_food(self):
+        shoal = get_item(self, ShoalAgent)
+        if not food:
+            print("Não é food")
+        else:
+            shoal.come()
+            self.energy+=5
+                    
+
+    def random_walk(self):
+        pass            
 
     # função boa, do grupo do formigueiro de 2021.2, mas ainda não usada
     def get_item(self, agent_type):

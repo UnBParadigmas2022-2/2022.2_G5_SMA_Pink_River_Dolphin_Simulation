@@ -48,6 +48,9 @@ def portrayal_method(agent):
     return portrayal
 
 model_params = {
+    "num_dolphin": mesa.visualization.Slider(
+        "População de Botos", 5, 1, 20
+    ),
     "num_agents": mesa.visualization.Slider(
         "População Inicial de cardumes", 10, 10, 30
     ),
@@ -56,7 +59,7 @@ model_params = {
     ),
 }
 
-grid = CanvasGrid(portrayal_method, 15, 15, 600, 600)
+grid = CanvasGrid(portrayal_method, 25, 25, 600, 600)
 
 server = ModularServer(
     Model, [grid], "Pink Dolphin", model_params

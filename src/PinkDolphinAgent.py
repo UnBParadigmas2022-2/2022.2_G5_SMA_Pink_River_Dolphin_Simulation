@@ -1,6 +1,6 @@
 from mesa import Agent
 from src.WaterAgent import WaterAgent
-
+import random
 
 class PinkDolphinAgent(Agent):
     breed = None
@@ -19,7 +19,7 @@ class PinkDolphinAgent(Agent):
         breed="Boto",
         energy=20,
         moore=True,
-        radius=3,
+        radius=1,
         walk_radius=1,
         energy_loss=1,
     ):
@@ -31,87 +31,80 @@ class PinkDolphinAgent(Agent):
         self.walk_radius = walk_radius
         self.energy_loss = energy_loss
         self.food = 0
+        self.pre = self.pos
+        self.fugindo = False
 
     def step(self):
         try:
             self.energy -= self.energy_loss
-            self.walk_search_food()
-            self.check_got_food(2)
-            self.check_got_energy()
+            self.analise_de_energia_botonica()
+            self.procura_bobby_fisher()
+            self.analise_agua()
+            self.procura_food()
         except:
             pass
+    
+    def get_good_pos(self):
+        possible = self.model.grid.get_neighbors(self.pos,moore = True)
+        self.random.shuffle(possible)
 
-    def walk_search_food(self):
-        possible_walk_pos = self.model.grid.get_neighborhood(
-            self.pos, moore=self.moore, radius=self.radius
-        )
-        new_position = self.get_new_position(possible_walk_pos, self.pos)
+        for agent in possible:
+            if type(agent) is WaterAgent:
+                print('LIMPAAAA')
+                if agent.qualidade > 2:
+                    return agent.pos
 
-        self.model.grid.move_agent(self, new_position)
+    def migrate(self):
+        print("-------MIGRATEEEEEE---------")
+        self.fugindo = True
+        rand_pos = self.get_good_pos()
+        print(f"###### RAND {rand_pos} SELFPOS {self.pos} PRE {self.pre}")
+        pre = self.pre
+        if rand_pos != pre:
+            print("NO ESCURINHO DO CINEMA")
+            self.pre = self.pos
+            self.model.grid.move_agent(self,rand_pos)
+        # escolhe uma aleatório que não seja a pre
 
-    def get_new_position(self, possible_walk_pos, current_pos):
-        next_pos = None
-        current_best_pos = None
-        minimum_distance = 10**6
-        step_x = 0
-        step_y = 0
+    def analise_agua(self):
+        if self.get_water_quality():
+            self.migrate()
 
-        for walk_pos in possible_walk_pos:
-            food = self.get_food_agent(walk_pos)
-            if len(food) > 0:
-                current_distance = (current_pos[0] - walk_pos[0]) ** 2 + (
-                    current_pos[1] - walk_pos[1]
-                ) ** 2
-                if current_distance < minimum_distance:
-                    minimum_distance = current_distance
-                    current_best_pos = walk_pos
+    def get_water_quality(self):
+        for agent in self.model.grid.get_neighbors(self.pos,moore = True,include_center = True):
+            if type(agent) is WaterAgent:
+                if agent.qualidade <= 2:
+                    # água ruim MIGRA
+                    return True
+        return False
 
-        if current_best_pos != None:
-            if current_pos[0] < current_best_pos[0]:
-                step_x = 1
-            elif current_pos[0] > current_best_pos[0]:
-                step_x = -1
+    def analise_de_energia_botonica(self):
+        if self.energy <= 10:
+            # com fome, procura comida.
+            self.migrate()
+    
+    def procura_bobby_fisher(self):
+        for agent in self.model.grid.get_neighbors(self.pos,moore = True,include_center = True):
+                if type(agent) is FisherAgent:
+                    # pescador perto MIGRA
+                    self.migrate()
 
-            if current_pos[1] < current_best_pos[1]:
-                step_y = 1
-            elif current_pos[1] > current_best_pos[1]:
-                step_y = -1
 
-            next_pos = (
-                current_pos[0]
-                + min(self.walk_radius, abs(current_pos[0] - current_best_pos[0]))
-                * step_x,
-                current_pos[1]
-                + min(self.walk_radius, abs(current_pos[1] - current_best_pos[1]))
-                * step_y,
-            )
+    def procura_food(self):
+        shoal = get_item(self, ShoalAgent)
+        if not food:
+            print("Não é food")
+        else:
+            shoal.come()
+            self.energy+=5
+                    
 
-            return next_pos
+    def random_walk(self):
+        pass            
 
-        next_pos = self.model.grid.get_neighborhood(
-            self.pos, moore=self.moore, include_center=False, radius=self.walk_radius
-        )
-        return self.random.choice(next_pos)
+    # função boa, do grupo do formigueiro de 2021.2, mas ainda não usada
+    def get_item(self, agent_type):
+        for agent in self.model.grid.get_cell_list_contents([self.pos]):
+            if type(agent) is agent_type and agent != self:
+                return agent
 
-    def get_food_agent(self, pos):
-        try:
-            this_cell = self.model.grid.get_cell_list_contents([pos])
-            return [obj for obj in this_cell if not isinstance(obj, PinkDolphinAgent) or isinstance(obj, WaterAgent)]
-        except:
-            return []
-
-    def check_got_food(self, min_to_reproduce):
-
-        if self.model.steps + 1 == 10:
-
-            if self.food >= min_to_reproduce:
-                if self.breed == "Boto":
-                    self.model.init_agent(PinkDolphinAgent, 2)
-                self.food = 0
-
-            if self.food == 0:
-                self.energy = 0
-
-    def check_got_energy(self):
-        if self.energy == 0:
-            self.model.grid.remove_agent(self)

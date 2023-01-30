@@ -1,6 +1,6 @@
 from mesa import Agent
 from src.WaterAgent import WaterAgent
-
+import random
 
 class ShoalAgent(Agent):
     def __init__(self, unique_id, model):
@@ -19,6 +19,9 @@ class ShoalAgent(Agent):
                 # self.procuraLixo()
         except:
             pass
+
+    def come(self):
+        self.model.grid.remove_agent()
 
     def give_food(self):
         species = self.get_specie_agent(self.pos)
@@ -50,6 +53,8 @@ class ShoalAgent(Agent):
         try:
             next_pos = self.model.grid.get_neighborhood(self.pos, moore=True, include_center=False, radius=1)
             next_pos_content = self.model.grid.get_neighbors(self.pos, moore=True, include_center=False, radius=1)
+            random.shuffle(next_pos_content)
+
             lowest_quality_cell = [None, 5]
             for idx, agent in enumerate(next_pos_content):
                 if type(agent) is WaterAgent:
@@ -63,4 +68,4 @@ class ShoalAgent(Agent):
                     break
         except:
             pass
-                
+

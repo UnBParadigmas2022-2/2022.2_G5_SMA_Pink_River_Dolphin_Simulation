@@ -52,7 +52,7 @@ model_params = {
         "População de Botos", 5, 1, 20
     ),
     "num_agents": mesa.visualization.Slider(
-        "População Inicial de cardumes", 10, 10, 30
+        "População Inicial de cardumes", 10, 30, 60
     ),
     "num_poluentes": mesa.visualization.Slider(
         "Quantidade de poluentes", 1, 1, 5

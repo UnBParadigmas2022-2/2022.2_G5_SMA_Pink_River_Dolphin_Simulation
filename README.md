@@ -72,7 +72,7 @@ python main.py
 |Nome do Membro | Contribuição | Significância da Contribuição para o Projeto (Excelente/Boa/Regular/Ruim/Nula) |
 | -- | -- | -- |
 | Artur Vinicius Dias Nunes  | Adição da função de reprodução dos botos | Excelente |
-| Caio César Oliveira |  |  |
+| Caio César Oliveira | Contribuição no agente boto cor de rosa (Pink Dolphin), nas funções de caçar e comer o cardume. Além disso na função de caçar o boto no pescador e a função de pescar o boto em si | Excelente |
 | João Pedro Alves da Silva Chaves | Adição da função que faz com que o boto fuja da água poluída e apoio na implementação dos agentes "pescador" e "água" |  Excelente |
 | João Vitor de Souza Durso |  |  |
 | Leticia Assunção Aires Moreira | |  |

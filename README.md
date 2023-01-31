@@ -57,9 +57,9 @@ pip install mesa
 ````
 3- Clonar o presente repositório; <br>
 ````
-https://github.com/UnBParadigmas2022-2/2022.2_G5_SMA_Pink_River_Dolphin_Simulation.git
+git clone https://github.com/UnBParadigmas2022-2/2022.2_G5_SMA_Pink_River_Dolphin_Simulation.git
 ````
-4- Usar o seguinte comando:
+4- Usar o seguinte comando dentro do repositório:
 
 ````
 python main.py
@@ -67,9 +67,18 @@ python main.py
 ### E pronto, você já pode visualizar a simulação! <br>
 ![](https://github.com/UnBParadigmas2022-2/2022.2_G5_SMA_Pink_River_Dolphin_Simulation/blob/main/assets/pink-dolphin.gif)
 
-## Uso 
+## Participações
 
-
+|Nome do Membro | Contribuição | Significância da Contribuição para o Projeto (Excelente/Boa/Regular/Ruim/Nula) |
+| -- | -- | -- |
+| Artur Vinicius Dias Nunes  |  |  |
+| Caio César Oliveira |  |  |
+| João Pedro Alves da Silva Chaves |  |   |
+| João Vitor de Souza Durso |  |  |
+| Leticia Assunção Aires Moreira | |  |
+| Luan Vasco Cavalcante |  |  |
+| Victor Rayan Adriano Ferreira |  |  |
+| Christian Fleury Alencar Siqueira |  |  |
 
 ## Vídeo
 

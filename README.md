@@ -71,9 +71,9 @@ python main.py
 
 |Nome do Membro | Contribuição | Significância da Contribuição para o Projeto (Excelente/Boa/Regular/Ruim/Nula) |
 | -- | -- | -- |
-| Artur Vinicius Dias Nunes  |  |  |
+| Artur Vinicius Dias Nunes  | Adição da função de reprodução dos botos | Excelente |
 | Caio César Oliveira |  |  |
-| João Pedro Alves da Silva Chaves | Adição da função que faz com que o boto fuja da água poluída e apoio na implementação dos agentes "pescador" e "água" |  Boa |
+| João Pedro Alves da Silva Chaves | Adição da função que faz com que o boto fuja da água poluída e apoio na implementação dos agentes "pescador" e "água" |  Excelente |
 | João Vitor de Souza Durso |  |  |
 | Leticia Assunção Aires Moreira | |  |
 | Luan Vasco Cavalcante |  |  |

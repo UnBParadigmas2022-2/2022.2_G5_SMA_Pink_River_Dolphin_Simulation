@@ -57,3 +57,11 @@ class Model(Model):
         self.steps = 0
         self.init_agent(ShoalAgent, self.num_agents)
         self.init_agent(FisherAgent, self.num_agents)
+
+    def cria_boto(self):
+        id = uuid.uuid1()
+        agent = PinkDolphinAgent(id, self)
+        self.schedule.add(agent)
+        if self.grid.exists_empty_cells():
+            print("entrou")
+            self.grid.place_agent(agent, self.grid.find_empty())

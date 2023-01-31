@@ -77,7 +77,7 @@ python main.py
 | João Vitor de Souza Durso |  |  |
 | Leticia Assunção Aires Moreira | |  |
 | Luan Vasco Cavalcante | Movimentação dos botos. Implementação do agente água. Criação do Agente Poluente. Criação da função boto come cardume. | Excelente |
-| Victor Rayan Adriano Ferreira |  |  |
+| Victor Rayan Adriano Ferreira | Slider de quantidade de cardumes iniciais, fugir da água com qualidade baixa, GUI. | Regular |
 | Christian Fleury Alencar Siqueira |  |  |
 
 ## Vídeo

@@ -1,4 +1,5 @@
 from mesa import Agent
+from src.PinkDolphinAgent import PinkDolphinAgent
 from src.WaterAgent import WaterAgent
 
 
@@ -27,6 +28,7 @@ class FisherAgent(Agent):
     def step(self):
         try:
             self.walk_search_food()
+            self.verifica_pos_boto(PinkDolphinAgent)
         except:
             pass
 
@@ -82,10 +84,14 @@ class FisherAgent(Agent):
         )
         return self.random.choice(next_pos)
 
+    def verifica_pos_boto(self, agent_type):
+        for agent in self.model.grid.get_cell_list_contents([self.pos]):
+            if type(agent) is agent_type and agent != self:
+                self.model.grid.remove_agent(agent)
+
     def get_food_agent(self, pos):
         try:
             this_cell = self.model.grid.get_cell_list_contents([pos])
-            return [obj for obj in this_cell if not isinstance(obj, PinkDolphinAgent) or isinstance(obj, WaterAgent)]
+            return [obj for obj in this_cell if not isinstance(obj, WaterAgent)]
         except:
             return []
-

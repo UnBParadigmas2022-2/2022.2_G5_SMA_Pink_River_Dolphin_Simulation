@@ -1,5 +1,7 @@
 from mesa import Agent
 from src.WaterAgent import WaterAgent
+from src.ShoalAgent import ShoalAgent
+
 import random
 
 class PinkDolphinAgent(Agent):
@@ -37,8 +39,9 @@ class PinkDolphinAgent(Agent):
     def step(self):
         try:
             self.energy -= self.energy_loss
+            self.procura_shoal()
             self.analise_de_energia_botonica()
-            self.procura_bobby_fisher()
+            #self.procura_bobby_fisher()
             self.analise_agua()
             self.procura_food()
         except:
@@ -50,18 +53,18 @@ class PinkDolphinAgent(Agent):
 
         for agent in possible:
             if type(agent) is WaterAgent:
-                print('LIMPAAAA')
+                #print('LIMPAAAA')
                 if agent.qualidade > 2:
                     return agent.pos
 
     def migrate(self):
-        print("-------MIGRATEEEEEE---------")
+        #print("-------MIGRATEEEEEE---------")
         self.fugindo = True
         rand_pos = self.get_good_pos()
-        print(f"###### RAND {rand_pos} SELFPOS {self.pos} PRE {self.pre}")
+        #print(f"###### RAND {rand_pos} SELFPOS {self.pos} PRE {self.pre}")
         pre = self.pre
         if rand_pos != pre:
-            print("NO ESCURINHO DO CINEMA")
+            #print("NO ESCURINHO DO CINEMA")
             self.pre = self.pos
             self.model.grid.move_agent(self,rand_pos)
         # escolhe uma aleatório que não seja a pre
@@ -85,19 +88,18 @@ class PinkDolphinAgent(Agent):
     
     def procura_bobby_fisher(self):
         for agent in self.model.grid.get_neighbors(self.pos,moore = True,include_center = True):
-                if type(agent) is FisherAgent:
-                    # pescador perto MIGRA
-                    self.migrate()
+            if type(agent) is FisherAgent:
+                # pescador perto MIGRA
+                self.migrate()
 
-
-    def procura_food(self):
-        shoal = get_item(self, ShoalAgent)
-        if not food:
-            print("Não é food")
-        else:
-            shoal.come()
-            self.energy+=5
-                    
+    def procura_shoal(self): 
+        for agent in self.model.grid.get_neighbors(self.pos,moore = True):
+            if type(agent) is ShoalAgent:
+                print("NO ESCURINHO DO GOLFINHO")
+                print(agent.pos)
+                self.model.grid.move_agent(self,agent.pos)
+                agent.come()
+                self.energy+=5
 
     def random_walk(self):
         pass            

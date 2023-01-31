@@ -73,7 +73,7 @@ python main.py
 | -- | -- | -- |
 | Artur Vinicius Dias Nunes  |  |  |
 | Caio César Oliveira |  |  |
-| João Pedro Alves da Silva Chaves |  |   |
+| João Pedro Alves da Silva Chaves | Adição da função que faz com que o boto fuja da água poluída e apoio na implementação dos agentes "pescador" e "água" |  Boa |
 | João Vitor de Souza Durso |  |  |
 | Leticia Assunção Aires Moreira | |  |
 | Luan Vasco Cavalcante |  |  |

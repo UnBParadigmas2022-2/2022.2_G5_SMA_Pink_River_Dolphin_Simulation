@@ -33,7 +33,8 @@ Nesse sentido, seguindo a temática de animais em risco de extinção aplicada n
 
 ## Screenshots
 
-Adicione 2 ou mais screenshots do projeto em termos de interface e/ou funcionamento.
+<img src="https://user-images.githubusercontent.com/72623771/215625577-790d3ac7-8f95-41ef-9499-1fa243229573.png" min-width="600px" max-width="600px" width="600px" align="center" alt="Computador LeticiaAires">
+<img src="https://user-images.githubusercontent.com/72623771/215625870-22202bec-809d-4a11-92c7-5a02152cdbca.png" min-width="600px" max-width="600px" width="600px" align="center" alt="Computador LeticiaAires">
 
 ## Instalação 
 **Linguagens**: Python<br>

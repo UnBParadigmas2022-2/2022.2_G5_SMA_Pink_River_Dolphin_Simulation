@@ -19,7 +19,6 @@ class WaterAgent(Agent):
                 pass
 
     def perdeQualidade(self):
-        print("Perdi")
         if self.qualidade > 1:
             self.qualidade -= 1
         

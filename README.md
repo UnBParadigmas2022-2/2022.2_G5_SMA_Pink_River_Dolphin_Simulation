@@ -76,7 +76,7 @@ python main.py
 | João Pedro Alves da Silva Chaves | Adição da função que faz com que o boto fuja da água poluída e apoio na implementação dos agentes "pescador" e "água" |  Excelente |
 | João Vitor de Souza Durso |  |  |
 | Leticia Assunção Aires Moreira | |  |
-| Luan Vasco Cavalcante |  |  |
+| Luan Vasco Cavalcante | Movimentação dos botos. Implementação do agente água. Criação do Agente Poluente. Criação da função boto come cardume. | Excelente |
 | Victor Rayan Adriano Ferreira |  |  |
 | Christian Fleury Alencar Siqueira |  |  |
 

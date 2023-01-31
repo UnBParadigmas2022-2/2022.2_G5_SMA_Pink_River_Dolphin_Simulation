@@ -1,3 +1,4 @@
+import uuid
 from mesa import Agent
 from src.WaterAgent import WaterAgent
 from src.ShoalAgent import ShoalAgent
@@ -35,15 +36,17 @@ class PinkDolphinAgent(Agent):
         self.food = 0
         self.pre = self.pos
         self.fugindo = False
+        self.comida = 0
 
     def step(self):
         try:
-            self.energy -= self.energy_loss
+            self.reproducao()
             self.procura_shoal()
+            self.energy -= self.energy_loss
             self.analise_de_energia_botonica()
             #self.procura_bobby_fisher()
             self.analise_agua()
-            self.procura_food()
+            
         except:
             pass
     
@@ -94,15 +97,23 @@ class PinkDolphinAgent(Agent):
 
     def procura_shoal(self): 
         for agent in self.model.grid.get_neighbors(self.pos,moore = True):
-            if type(agent) is ShoalAgent:
-                print("NO ESCURINHO DO GOLFINHO")
+            if type(agent) is ShoalAgent and not self.get_water_quality():
+                ##print("NO ESCURINHO DO GOLFINHO")
                 print(agent.pos)
                 self.model.grid.move_agent(self,agent.pos)
-                agent.come()
                 self.energy+=5
+                print(self.energy)
+                self.comida= self.comida + 1
+                agent.come()
 
     def random_walk(self):
         pass            
+
+    def reproducao(self):
+        if self.comida > 0 and self.comida % 2 == 0:
+            self.comida = 0
+            self.model.cria_boto()
+            ##print("VAI LUAN")
 
     # função boa, do grupo do formigueiro de 2021.2, mas ainda não usada
     def get_item(self, agent_type):

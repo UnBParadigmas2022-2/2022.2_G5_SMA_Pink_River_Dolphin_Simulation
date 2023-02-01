@@ -33,13 +33,13 @@ Nesse sentido, seguindo a temática de animais em risco de extinção aplicada n
 <img src="https://user-images.githubusercontent.com/72623771/215625577-790d3ac7-8f95-41ef-9499-1fa243229573.png" min-width="600px" max-width="600px" width="600px" align="center" alt="Tela inicial">
 
 ### Executando simulação
-<img src= "assets/iniciando_simulacao.mp4" min-width="600px" max-width="600px" width="600px" align="center" alt="Executando main.py">
+<img src= "assets/executando.gif" min-width="600px" max-width="600px" width="600px" align="center"">
 
 ### Simulação em funcionamento
-<img src= "assets/simulacao_em_andamento.mp4" min-width="600px" max-width="600px" width="600px" align="center" alt="Simulação em andamento">
+<img src= "assets/em_andamento.gif" min-width="600px" max-width="600px" width="600px" align="center"">
 
 ### Configurações adicionais
-<img src= "assets/adicionais" min-width="600px" max-width="600px" width="600px" align="center" alt="Configurações">
+<img src= "assets/adicionais.png" min-width="600px" max-width="600px" width="600px" align="center" alt="Configurações">
 
 Como visto acima, você pode aumentar ou diminuir:
 * A população de boto

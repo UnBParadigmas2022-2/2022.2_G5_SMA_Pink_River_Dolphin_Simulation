@@ -30,16 +30,25 @@ Nesse sentido, seguindo a temática de animais em risco de extinção aplicada n
 ## Screenshots
 
 ### Tela inicial 
-<img src="https://user-images.githubusercontent.com/72623771/215625577-790d3ac7-8f95-41ef-9499-1fa243229573.png" min-width="600px" max-width="600px" width="600px" align="center" alt="Tela inicial">
+<p>
+<img width = "600" height "600" src ="https://user-images.githubusercontent.com/72623771/215625577-790d3ac7-8f95-41ef-9499-1fa243229573.png"
+</p>
+
 
 ### Executando simulação
-<img src= "assets/executando.gif" min-width="600px" max-width="600px" width="600px" align="center"">
+<p>
+<img width = "600" height "600" src ="assets/executando.gif"
+</p>
 
 ### Simulação em funcionamento
-<img src= "assets/em_andamento.gif" min-width="600px" max-width="600px" width="600px" align="center"">
+<p>
+<img width = "600" height "600" src ="assets/em_andamento.gif"
+</p>
 
 ### Configurações adicionais
-<img src= "assets/adicionais.png" min-width="600px" max-width="600px" width="600px" align="center" alt="Configurações">
+<p>
+<img width = "600" height "600" src ="assets/adicionais.png"
+</p>
 
 Como visto acima, você pode aumentar ou diminuir:
 * A população de boto
@@ -144,12 +153,12 @@ python main.py
 
 ## Referências
 
-KAZIL, Jackie; MASAD, David; ANDREW, Crooks. Utilizing Python for Agent-Based Modeling: The Mesa Framework. Cham: Springer International Publishing, 2020. Disponível em: https://mesa.readthedocs.io/en/stable/. Acesso em: 20 jan. 2023.
+> KAZIL, Jackie; MASAD, David; ANDREW, Crooks. Utilizing Python for Agent-Based Modeling: The Mesa Framework. Cham: Springer International Publishing, 2020. Disponível em: https://mesa.readthedocs.io/en/stable/. Acesso em: 20 jan. 2023.
 
-Session 9A Lecture : Agent Based Simulation using MESA. Disponível em: https://www.youtube.com/watch?v=VeQkhfDYyMc. Acesso em: 20 jan. 2023.
+> Session 9A Lecture : Agent Based Simulation using MESA. Disponível em: https://www.youtube.com/watch?v=VeQkhfDYyMc. Acesso em: 20 jan. 2023.
 
-Grimm, Volker, Eloy Revilla, Uta Berger, Florian Jeltsch, Wolf M. Mooij, Steven F. Railsback, Hans-Hermann Thulke, Jacob Weiner, Thorsten Wiegand, and Donald L. DeAngelis. 2005. “Pattern-Oriented Modeling of Agent Based Complex Systems: Lessons from Ecology.” American Association for the Advancement of Science 310 (5750): 987–91. doi:10.1126/science.1116681.
+> Grimm, Volker, Eloy Revilla, Uta Berger, Florian Jeltsch, Wolf M. Mooij, Steven F. Railsback, Hans-Hermann Thulke, Jacob Weiner, Thorsten Wiegand, and Donald L. DeAngelis. 2005. “Pattern-Oriented Modeling of Agent Based Complex Systems: Lessons from Ecology.” American Association for the Advancement of Science 310 (5750): 987–91. doi:10.1126/science.1116681.
 
-Hunt, Andrew, and David Thomas. 2010. The Pragmatic Programmer: From Journeyman to Master. Reading, Massachusetts: Addison-Wesley.
+> Hunt, Andrew, and David Thomas. 2010. The Pragmatic Programmer: From Journeyman to Master. Reading, Massachusetts: Addison-Wesley.
 
-Leek, Jeffrey T., and Roger D. Peng. 2015. “Reproducible Research Can Still Be Wrong: Adopting a Prevention Approach.” Proceedings of the National Academy of Sciences 112 (6): 1645–46. doi:10.1073/pnas.1421412111.
+> Leek, Jeffrey T., and Roger D. Peng. 2015. “Reproducible Research Can Still Be Wrong: Adopting a Prevention Approach.” Proceedings of the National Academy of Sciences 112 (6): 1645–46. doi:10.1073/pnas.1421412111.

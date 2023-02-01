@@ -6,11 +6,7 @@
 
 **Paradigma**: Sistema Multiagentes<br>
 
-
-
-<img src="https://user-images.githubusercontent.com/72623771/214444939-651a794f-e3fa-4f79-96e8-5e21fa6f34cb.png" min-width="350px" max-width="350px" width="350px" align="right" alt="Computador LeticiaAires">
-
-
+<img src="https://user-images.githubusercontent.com/72623771/214444939-651a794f-e3fa-4f79-96e8-5e21fa6f34cb.png" min-width="350px" max-width="350px" width="350px" align="right" alt="Botinhos">
 
 ## Alunos
 
@@ -33,8 +29,23 @@ Nesse sentido, seguindo a temática de animais em risco de extinção aplicada n
 
 ## Screenshots
 
-<img src="https://user-images.githubusercontent.com/72623771/215625577-790d3ac7-8f95-41ef-9499-1fa243229573.png" min-width="600px" max-width="600px" width="600px" align="center" alt="Computador LeticiaAires">
-<img src="https://user-images.githubusercontent.com/72623771/215625870-22202bec-809d-4a11-92c7-5a02152cdbca.png" min-width="600px" max-width="600px" width="600px" align="center" alt="Computador LeticiaAires">
+### Tela inicial 
+<img src="https://user-images.githubusercontent.com/72623771/215625577-790d3ac7-8f95-41ef-9499-1fa243229573.png" min-width="600px" max-width="600px" width="600px" align="center" alt="Tela inicial">
+
+### Executando simulação
+<img src= "assets/iniciando_simulacao.mp4" min-width="600px" max-width="600px" width="600px" align="center" alt="Executando main.py">
+
+### Simulação em funcionamento
+<img src= "assets/simulacao_em_andamento.mp4" min-width="600px" max-width="600px" width="600px" align="center" alt="Simulação em andamento">
+
+### Configurações adicionais
+<img src= "assets/adicionais" min-width="600px" max-width="600px" width="600px" align="center" alt="Configurações">
+
+Como visto acima, você pode aumentar ou diminuir:
+* A população de boto
+* A população de cardumes
+* A quantidade de poluentes
+* Frames por segundo
 
 ## Instalação 
 **Linguagens**: Python<br>
@@ -74,14 +85,71 @@ python main.py
 | Artur Vinicius Dias Nunes  | Adição da função de reprodução dos botos | Excelente |
 | Caio César Oliveira | Contribuição no agente boto cor de rosa (Pink Dolphin), nas funções de caçar e comer o cardume. Além disso na função de caçar o boto no pescador e a função de pescar o boto em si | Excelente |
 | João Pedro Alves da Silva Chaves | Adição da função que faz com que o boto fuja da água poluída e apoio na implementação dos agentes "pescador" e "água" |  Excelente |
-| João Vitor de Souza Durso |  |  |
+| João Vitor de Souza Durso | Movimentação dos botos, do agente água, de pescar o boto e da reprodução dos botos.  | Excelente |
 | Leticia Assunção Aires Moreira | |  |
 | Luan Vasco Cavalcante | Movimentação dos botos. Implementação do agente água. Criação do Agente Poluente. Criação da função boto come cardume. | Excelente |
-| Victor Rayan Adriano Ferreira | Slider de quantidade de cardumes iniciais, fugir da água com qualidade baixa, GUI. | Regular |
+| Victor Rayan Adriano Ferreira | Slider de quantidade de cardumes iniciais, fugir da água com qualidade baixa, GUI. | Excelente |
 | Christian Fleury Alencar Siqueira |  |  |
+
+## Outros 
+### Lições Aprendidas
+|Nome do Membro | Lições Aprendidas | 
+| -------- | -- | 
+| Artur Vinicius Dias Nunes |  |  
+| Caio César Oliveira |  |  
+| João Pedro Alves da Silva Chaves | | 
+| João Vitor de Souza Durso  | |  
+|Leticia Assunção Aires Moreira  |  | 
+| Luan Vasco Cavalcante  |  |
+| Victor Rayan Adriano Ferreira  | | 
+| Christian Fleury Alencar Siqueira | |  
+
+### Percepções
+|Nome do Membro | Percepções | 
+| -------- | -- | 
+| Artur Vinicius Dias Nunes |  |  
+| Caio César Oliveira |  |  
+| João Pedro Alves da Silva Chaves | | 
+| João Vitor de Souza Durso  | |  
+|Leticia Assunção Aires Moreira  |  | 
+| Luan Vasco Cavalcante  |  |
+| Victor Rayan Adriano Ferreira  | | 
+| Christian Fleury Alencar Siqueira | |  
+
+### Fragilidades
+|Nome do Membro | Fragilidades | 
+| -------- | -- | 
+| Artur Vinicius Dias Nunes |  |  
+| Caio César Oliveira |  |  
+| João Pedro Alves da Silva Chaves | | 
+| João Vitor de Souza Durso  | |  
+|Leticia Assunção Aires Moreira  |  | 
+| Luan Vasco Cavalcante  |  |
+| Victor Rayan Adriano Ferreira  | | 
+| Christian Fleury Alencar Siqueira | |  
+
+### Trabalhos Futuros
+|Nome do Membro | Trabalhos Futuros | 
+| -------- | -- | 
+| Artur Vinicius Dias Nunes |  |  
+| Caio César Oliveira |  |  
+| João Pedro Alves da Silva Chaves | | 
+| João Vitor de Souza Durso  | |  
+|Leticia Assunção Aires Moreira  |  | 
+| Luan Vasco Cavalcante  |  |
+| Victor Rayan Adriano Ferreira  | | 
+| Christian Fleury Alencar Siqueira | |  
 
 ## Vídeo
 
 ## Referências
 
-https://mesa.readthedocs.io/en/latest/apis/api_main.html
+KAZIL, Jackie; MASAD, David; ANDREW, Crooks. Utilizing Python for Agent-Based Modeling: The Mesa Framework. Cham: Springer International Publishing, 2020. Disponível em: https://mesa.readthedocs.io/en/stable/. Acesso em: 20 jan. 2023.
+
+Session 9A Lecture : Agent Based Simulation using MESA. Disponível em: https://www.youtube.com/watch?v=VeQkhfDYyMc. Acesso em: 20 jan. 2023.
+
+Grimm, Volker, Eloy Revilla, Uta Berger, Florian Jeltsch, Wolf M. Mooij, Steven F. Railsback, Hans-Hermann Thulke, Jacob Weiner, Thorsten Wiegand, and Donald L. DeAngelis. 2005. “Pattern-Oriented Modeling of Agent Based Complex Systems: Lessons from Ecology.” American Association for the Advancement of Science 310 (5750): 987–91. doi:10.1126/science.1116681.
+
+Hunt, Andrew, and David Thomas. 2010. The Pragmatic Programmer: From Journeyman to Master. Reading, Massachusetts: Addison-Wesley.
+
+Leek, Jeffrey T., and Roger D. Peng. 2015. “Reproducible Research Can Still Be Wrong: Adopting a Prevention Approach.” Proceedings of the National Academy of Sciences 112 (6): 1645–46. doi:10.1073/pnas.1421412111.

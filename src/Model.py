@@ -36,18 +36,18 @@ class Model(Model):
                     self.schedule.add(agent)
                     self.grid.place_agent(agent,(x,y))
 
-        print(cont)
-        print(self.height*self.width)
-        print(self.height*self.width - cont)
+        #print(cont)
+        #print(self.height*self.width)
+        #print(self.height*self.width - cont)
 
     def init_agent(self, Agent, num_agents):
-        print("funcionou", Agent)
+        #print("funcionou", Agent)
         for i in range(num_agents):
             id = uuid.uuid1()
             agent = Agent(id, self)
             self.schedule.add(agent)
             if self.grid.exists_empty_cells():
-                print("entrou")
+                #print("entrou")
                 self.grid.place_agent(agent, self.grid.find_empty())
 
     def step(self):
@@ -63,5 +63,5 @@ class Model(Model):
         agent = PinkDolphinAgent(id, self)
         self.schedule.add(agent)
         if self.grid.exists_empty_cells():
-            print("entrou")
+            #print("entrou")
             self.grid.place_agent(agent, self.grid.find_empty())

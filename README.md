@@ -107,7 +107,7 @@ python main.py
 | Artur Vinicius Dias Nunes |  |  
 | Caio César Oliveira | Além de aprender um pouco sobre a estrutura de modelagem baseada em agente Mesa, também aprendemos um pouco mais sobre orientação a objetos e trabalho em equipe.  |  
 | João Pedro Alves da Silva Chaves | | 
-| João Vitor de Souza Durso  | |  
+| João Vitor de Souza Durso  | Eu já conhecia os sistemas multiagentes, pois havia feito a matéria de IA no semestre passado. No entanto, o assunto foi abordado de maneira mais prática e, assim, pude aprender melhor sobre o framework MESA e melhorar minhas habilidades em Python. |  
 |Leticia Assunção Aires Moreira  | Por meio da construção do projeto, foi possível aprender a respeito do sistema multiagentes mais na prática, já que a teoria me parecia um pouco distante e complexa. Além disso, pude praticar um pouco o python, já que utilizamos o MESA, o que facilitou bastante a implementação do jogo. | 
 | Luan Vasco Cavalcante  |  |
 | Victor Rayan Adriano Ferreira  | | 
@@ -119,7 +119,7 @@ python main.py
 | Artur Vinicius Dias Nunes |  |  
 | Caio César Oliveira | Paradigma é diferente do que estava acostumado a mexer, muito curioso como os objetos se conectam e interessante a capacidade de conseguir replicar situações da vida real em nível lógico, de forma simplificada claro. |  
 | João Pedro Alves da Silva Chaves | | 
-| João Vitor de Souza Durso  | |  
+| João Vitor de Souza Durso  | Paradigma muito interessante, pois as aplicações são infinitas. Podemos explorar contextos distintos e programar sistemas que se comportem muito próximos da realidade. Podemos antecipar possíveis problemas! |  
 |Leticia Assunção Aires Moreira  | Senti que a curva de aprendizado do paradigma foi um pouco mais lenta que dos outros e pude perceber como a mudança em 1 agente influencia o comportamento dos outros agentes, de modo que os ajustes precisam ser sistêmicos. | 
 | Luan Vasco Cavalcante  |  |
 | Victor Rayan Adriano Ferreira  | | 
@@ -131,8 +131,8 @@ python main.py
 | Artur Vinicius Dias Nunes |  |  
 | Caio César Oliveira | Por algum motivo que o grupo não descobriu algumas vezes o pescador foca no lixo e não sai de perto dele. |  
 | João Pedro Alves da Silva Chaves | | 
-| João Vitor de Souza Durso  | |  
-|Leticia Assunção Aires Moreira  | As funções desenvolvidas devem levar em consideração todos os outros agentes que podem ser impactados. Um exemplo disso é que, após implementar a busca do pescadore pelos botos, ele passa a se manter próximo do lixo. Contudo, antes de tal funcionalidade, o pescador se movimentava normalmente.  | 
+| João Vitor de Souza Durso  | É muito dificíl debugar comportamentos inesperados do código. Você programa os agentes individualmente pensando que os agentes irão se comportar de tal maneira, mas quando você coloca tudo para se conectar, você percebe diversas reações que não imaginou. |  
+|Leticia Assunção Aires Moreira  | As funções desenvolvidas devem levar em consideração todos os outros agentes que podem ser impactados. Um exemplo disso é que, após implementar a busca do pescador pelos botos, ele passa a se manter próximo do lixo. Contudo, antes de tal funcionalidade, o pescador se movimentava normalmente.  | 
 | Luan Vasco Cavalcante  |  |
 | Victor Rayan Adriano Ferreira  | | 
 | Christian Fleury Alencar Siqueira | |  
@@ -143,13 +143,14 @@ python main.py
 | Artur Vinicius Dias Nunes |  |  
 | Caio César Oliveira | Não sei se seria possível, mas utilizar os cenários gerados para os agentes irem aprendendo comportamentos por meio de machine learning. Dessa forma, qunato mais cenários fossem executados, melhor seriam os comportamentos dos agentes. |  
 | João Pedro Alves da Silva Chaves | | 
-| João Vitor de Souza Durso  | |  
+| João Vitor de Souza Durso  | É possível melhorar o efeito dos poluentes, dando movimento a eles, tendo em vista que o rio se move, levando consigo os dejetos. Dessa forma, ficaria mais próximo da realidade. |  
 |Leticia Assunção Aires Moreira  | Uma possível melhoria é a redução da dispersão do esgoto. | 
 | Luan Vasco Cavalcante  |  |
 | Victor Rayan Adriano Ferreira  | | 
 | Christian Fleury Alencar Siqueira | |  
 
 ## Vídeo
+[Apresentação](https://youtu.be/R-hHrqT8FRg)
 
 ## Referências
 

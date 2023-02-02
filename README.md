@@ -146,8 +146,7 @@ python main.py
 | João Vitor de Souza Durso  | É possível melhorar o efeito dos poluentes, dando movimento a eles, tendo em vista que o rio se move, levando consigo os dejetos. Dessa forma, ficaria mais próximo da realidade. |  
 |Leticia Assunção Aires Moreira  | Uma possível melhoria é a redução da dispersão do esgoto. | 
 | Luan Vasco Cavalcante  |  |
-| Victor Rayan Adriano Ferreira  | Implementar modelos de agentes mais avançados, exemplo incluir modelos como inteligência artificial, 
-aprendizado por reforço para simular comportamentos mais complexos. | 
+| Victor Rayan Adriano Ferreira  | Implementar modelos de agentes mais avançados, exemplo incluir modelos como inteligência artificial, aprendizado por reforço para simular comportamentos mais complexos. | 
 | Christian Fleury Alencar Siqueira | Quando o cardume morre por ser cerdado por poluição, seria interessante, na função takeDown, que o cardume avisasse os outros cardumes de onde morreu para que os outros pudessem evitar aquela área. É claro que isso daria poderes de telecinese para os cardumes, mas a dinâmica desses agentes ficaria muito interessante. |  
 
 ## Vídeo

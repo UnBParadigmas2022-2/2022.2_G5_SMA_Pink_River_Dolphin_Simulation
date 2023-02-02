@@ -104,7 +104,7 @@ python main.py
 ### Lições Aprendidas
 |Nome do Membro | Lições Aprendidas | 
 | -------- | -- | 
-| Artur Vinicius Dias Nunes |  |  
+| Artur Vinicius Dias Nunes | Trabalhar com sistema multiagentes estimula uma nova forma de pensar o que foi bem interessante e trouxe uma nova forma de entender os comportamento das coisas no geral. |  
 | Caio César Oliveira | Além de aprender um pouco sobre a estrutura de modelagem baseada em agente Mesa, também aprendemos um pouco mais sobre orientação a objetos e trabalho em equipe.  |  
 | João Pedro Alves da Silva Chaves | Aprendi a utilizar o Mesa, consegui entender o funcionamento e organização dos agentes e seus comportamento e tudo isso de forma prática. | 
 | João Vitor de Souza Durso  | Eu já conhecia os sistemas multiagentes, pois havia feito a matéria de IA no semestre passado. No entanto, o assunto foi abordado de maneira mais prática e, assim, pude aprender melhor sobre o framework MESA e melhorar minhas habilidades em Python. |  
@@ -116,7 +116,7 @@ python main.py
 ### Percepções
 |Nome do Membro | Percepções | 
 | -------- | -- | 
-| Artur Vinicius Dias Nunes |  |  
+| Artur Vinicius Dias Nunes | O paradigma abre uma visão diferente de programar, o que eu achei bem interessante, e acredito que poderia ser melhor explorada utilizando um framework que não fosse o MESA. |  
 | Caio César Oliveira | Paradigma é diferente do que estava acostumado a mexer, muito curioso como os objetos se conectam e interessante a capacidade de conseguir replicar situações da vida real em nível lógico, de forma simplificada claro. |  
 | João Pedro Alves da Silva Chaves | Paradigma interessante, porém desafiador. A necessidade de pensar em como uma pequena mudança no comportamento afeta os outros agentes é algo complexo/ | 
 | João Vitor de Souza Durso  | Paradigma muito interessante, pois as aplicações são infinitas. Podemos explorar contextos distintos e programar sistemas que se comportem muito próximos da realidade. Podemos antecipar possíveis problemas! |  
@@ -128,7 +128,7 @@ python main.py
 ### Fragilidades
 |Nome do Membro | Fragilidades | 
 | -------- | -- | 
-| Artur Vinicius Dias Nunes |  |  
+| Artur Vinicius Dias Nunes | Os agentes tinha comportamento diferentes dependendo de qual local ele eram gerados, ou se tinha outro agentes proximos a eles. |  
 | Caio César Oliveira | Por algum motivo que o grupo não descobriu algumas vezes o pescador foca no lixo e não sai de perto dele. |  
 | João Pedro Alves da Silva Chaves | Em alguns casos os cardumes não estão se afastando dá água poluída. | 
 | João Vitor de Souza Durso  | É muito dificíl debugar comportamentos inesperados do código. Você programa os agentes individualmente pensando que os agentes irão se comportar de tal maneira, mas quando você coloca tudo para se conectar, você percebe diversas reações que não imaginou. |  
@@ -140,7 +140,7 @@ python main.py
 ### Trabalhos Futuros
 |Nome do Membro | Trabalhos Futuros | 
 | -------- | -- | 
-| Artur Vinicius Dias Nunes |  |  
+| Artur Vinicius Dias Nunes | Adicionar um comportamento para que o agente que representa a água se movimenta-se, assim como o movimento natural do rio. |  
 | Caio César Oliveira | Não sei se seria possível, mas utilizar os cenários gerados para os agentes irem aprendendo comportamentos por meio de machine learning. Dessa forma, qunato mais cenários fossem executados, melhor seriam os comportamentos dos agentes. |  
 | João Pedro Alves da Silva Chaves | Seria interessante adicionar outras espécies como agentes. | 
 | João Vitor de Souza Durso  | É possível melhorar o efeito dos poluentes, dando movimento a eles, tendo em vista que o rio se move, levando consigo os dejetos. Dessa forma, ficaria mais próximo da realidade. |  

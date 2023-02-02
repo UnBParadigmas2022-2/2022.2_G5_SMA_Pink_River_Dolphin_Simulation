@@ -105,7 +105,7 @@ python main.py
 |Nome do Membro | Lições Aprendidas | 
 | -------- | -- | 
 | Artur Vinicius Dias Nunes |  |  
-| Caio César Oliveira |  |  
+| Caio César Oliveira | Além de aprender um pouco sobre a estrutura de modelagem baseada em agente Mesa, também aprendemos um pouco mais sobre orientação a objetos e trabalho em equipe.  |  
 | João Pedro Alves da Silva Chaves | | 
 | João Vitor de Souza Durso  | |  
 |Leticia Assunção Aires Moreira  |  | 
@@ -117,7 +117,7 @@ python main.py
 |Nome do Membro | Percepções | 
 | -------- | -- | 
 | Artur Vinicius Dias Nunes |  |  
-| Caio César Oliveira |  |  
+| Caio César Oliveira | Paradigma é diferente do que estava acostumado a mexer, muito curioso como os objetos se conectam e interessante a capacidade de conseguir replicar situações da vida real em nível lógico, de forma simplificada claro. |  
 | João Pedro Alves da Silva Chaves | | 
 | João Vitor de Souza Durso  | |  
 |Leticia Assunção Aires Moreira  |  | 
@@ -129,7 +129,7 @@ python main.py
 |Nome do Membro | Fragilidades | 
 | -------- | -- | 
 | Artur Vinicius Dias Nunes |  |  
-| Caio César Oliveira |  |  
+| Caio César Oliveira | Por algum motivo que o grupo não descobriu algumas vezes o pescador foca no lixo e não sai de perto dele. |  
 | João Pedro Alves da Silva Chaves | | 
 | João Vitor de Souza Durso  | |  
 |Leticia Assunção Aires Moreira  |  | 
@@ -141,7 +141,7 @@ python main.py
 |Nome do Membro | Trabalhos Futuros | 
 | -------- | -- | 
 | Artur Vinicius Dias Nunes |  |  
-| Caio César Oliveira |  |  
+| Caio César Oliveira | Não sei se seria possível, mas utilizar os cenários gerados para os agentes irem aprendendo comportamentos por meio de machine learning. Dessa forma, qunato mais cenários fossem executados, melhor seriam os comportamentos dos agentes. |  
 | João Pedro Alves da Silva Chaves | | 
 | João Vitor de Souza Durso  | |  
 |Leticia Assunção Aires Moreira  |  | 

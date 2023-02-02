@@ -98,7 +98,7 @@ python main.py
 | Leticia Assunção Aires Moreira | Contribuição no agente boto cor de rosa (Pink Dolphin) em conjunto com o Caio. Implementação da função de movimentação do pescador, bem como a função de comer cardume e outras funcionalidades. Construção do README. | Excelente  |
 | Luan Vasco Cavalcante | Movimentação dos botos. Implementação do agente água. Criação do Agente Poluente. Criação da função boto come cardume. | Excelente |
 | Victor Rayan Adriano Ferreira | Slider de quantidade de cardumes iniciais, fugir da água com qualidade baixa, GUI. | Excelente |
-| Christian Fleury Alencar Siqueira |  |  |
+| Christian Fleury Alencar Siqueira | Adição da função que faz com qu eo cardume morra ao ser cercado por poluição. | Excelente |
 
 ## Outros 
 ### Lições Aprendidas
@@ -111,7 +111,7 @@ python main.py
 |Leticia Assunção Aires Moreira  | Por meio da construção do projeto, foi possível aprender a respeito do sistema multiagentes mais na prática, já que a teoria me parecia um pouco distante e complexa. Além disso, pude praticar um pouco o python, já que utilizamos o MESA, o que facilitou bastante a implementação do jogo. | 
 | Luan Vasco Cavalcante  |  |
 | Victor Rayan Adriano Ferreira  | | 
-| Christian Fleury Alencar Siqueira | |  
+| Christian Fleury Alencar Siqueira | Eu não conhecia o paradigma de Sistemas multiagentes, então foi tudo novo para mim. Aprendi os principais coneitos e fundamentos do paradigma, algumas aplicações interessantes mostradas na disciplina, e no geral, mesmo que eu não desenvolva outros Sistemas multiagentes, todo o conhecimento adquirido serve de bagagem para diferentes áreas da programação. |  
 
 ### Percepções
 |Nome do Membro | Percepções | 
@@ -123,7 +123,7 @@ python main.py
 |Leticia Assunção Aires Moreira  | Senti que a curva de aprendizado do paradigma foi um pouco mais lenta que dos outros e pude perceber como a mudança em 1 agente influencia o comportamento dos outros agentes, de modo que os ajustes precisam ser sistêmicos. | 
 | Luan Vasco Cavalcante  |  |
 | Victor Rayan Adriano Ferreira  | | 
-| Christian Fleury Alencar Siqueira | |  
+| Christian Fleury Alencar Siqueira | Aprendi muito com as aulas no JADE, e mesmo usando o MESA para o trabalho, pelo tempo de entrega, achei o JADE muito legal. Foi meu paradigma preferido do semestre, porém ao mesmo tempo o que tive menos tempo para me dedicar. Gostaria muito de ver uma ascensão de sistemas multiagentes no mundo da programação, pois é incrível. |  
 
 ### Fragilidades
 |Nome do Membro | Fragilidades | 
@@ -135,7 +135,7 @@ python main.py
 |Leticia Assunção Aires Moreira  | As funções desenvolvidas devem levar em consideração todos os outros agentes que podem ser impactados. Um exemplo disso é que, após implementar a busca do pescador pelos botos, ele passa a se manter próximo do lixo. Contudo, antes de tal funcionalidade, o pescador se movimentava normalmente.  | 
 | Luan Vasco Cavalcante  |  |
 | Victor Rayan Adriano Ferreira  | | 
-| Christian Fleury Alencar Siqueira | |  
+| Christian Fleury Alencar Siqueira | Como principal fragilidade tive o tempo da entrega, que apesar de não ter sido curto, por conflitar com trabalhos finais de outras disciplinas, acabou ficando bem pesado. Também tive dificuldade de utilizar o MESA, que apesar de bem simplifciado, é bem diferente do JADE que vemos nas aulas, e então apenas os conceitos são aproveitados, mas a programção em si tem que ser aprendida do zero. |  
 
 ### Trabalhos Futuros
 |Nome do Membro | Trabalhos Futuros | 
@@ -147,7 +147,7 @@ python main.py
 |Leticia Assunção Aires Moreira  | Uma possível melhoria é a redução da dispersão do esgoto. | 
 | Luan Vasco Cavalcante  |  |
 | Victor Rayan Adriano Ferreira  | | 
-| Christian Fleury Alencar Siqueira | |  
+| Christian Fleury Alencar Siqueira | Quando o cardume morre por ser cerdado por poluição, seria interessante, na função takeDown, que o cardume avisasse os outros cardumes de onde morreu para que os outros pudessem evitar aquela área. É claro que isso daria poderes de telecinese para os cardumes, mas a dinâmica desses agentes ficaria muito interessante. |  
 
 ## Vídeo
 [Apresentação](https://youtu.be/R-hHrqT8FRg)

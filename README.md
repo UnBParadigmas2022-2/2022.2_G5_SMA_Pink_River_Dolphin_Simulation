@@ -109,7 +109,7 @@ python main.py
 | João Pedro Alves da Silva Chaves | Aprendi a utilizar o Mesa, consegui entender o funcionamento e organização dos agentes e seus comportamento e tudo isso de forma prática. | 
 | João Vitor de Souza Durso  | Eu já conhecia os sistemas multiagentes, pois havia feito a matéria de IA no semestre passado. No entanto, o assunto foi abordado de maneira mais prática e, assim, pude aprender melhor sobre o framework MESA e melhorar minhas habilidades em Python. |  
 |Leticia Assunção Aires Moreira  | Por meio da construção do projeto, foi possível aprender a respeito do sistema multiagentes mais na prática, já que a teoria me parecia um pouco distante e complexa. Além disso, pude praticar um pouco o python, já que utilizamos o MESA, o que facilitou bastante a implementação do jogo. | 
-| Luan Vasco Cavalcante  |  |
+| Luan Vasco Cavalcante  | Aprendi bastante com o multiagente. A possibilidade de fazer simulações no módulo SMA chamou minha atenção e eu me interessei bastante no tema. Tanto nos agentes, quantos nos métodos e no model a aprendizagem foi alta. |
 | Victor Rayan Adriano Ferreira  | Simular interações complexas entre vários agentes, Comunicação eficiente entre os agentes, conhecer biblioteca em python que facilita muito o desenvolvimento de sistemas multiagentes. | 
 | Christian Fleury Alencar Siqueira | Eu não conhecia o paradigma de Sistemas multiagentes, então foi tudo novo para mim. Aprendi os principais coneitos e fundamentos do paradigma, algumas aplicações interessantes mostradas na disciplina, e no geral, mesmo que eu não desenvolva outros Sistemas multiagentes, todo o conhecimento adquirido serve de bagagem para diferentes áreas da programação. |  
 

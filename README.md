@@ -121,19 +121,19 @@ python main.py
 | João Pedro Alves da Silva Chaves | Paradigma interessante, porém desafiador. A necessidade de pensar em como uma pequena mudança no comportamento afeta os outros agentes é algo complexo/ | 
 | João Vitor de Souza Durso  | Paradigma muito interessante, pois as aplicações são infinitas. Podemos explorar contextos distintos e programar sistemas que se comportem muito próximos da realidade. Podemos antecipar possíveis problemas! |  
 |Leticia Assunção Aires Moreira  | Senti que a curva de aprendizado do paradigma foi um pouco mais lenta que dos outros e pude perceber como a mudança em 1 agente influencia o comportamento dos outros agentes, de modo que os ajustes precisam ser sistêmicos. | 
-| Luan Vasco Cavalcante  |  |
+| Luan Vasco Cavalcante  | Gostei bastante do paradigma multiagente, é legal ver todos os agentes seguindo o código e o mesa tem uma interface muito amig |
 | Victor Rayan Adriano Ferreira  | O MESA é uma ferramenta muito boa para o desenvolvimento de sistemas multiagentes, e trabalhar com ele nos ensinou lições importantes sobre modelagem, comunicação e análise de resultados. | 
 | Christian Fleury Alencar Siqueira | Aprendi muito com as aulas no JADE, e mesmo usando o MESA para o trabalho, pelo tempo de entrega, achei o JADE muito legal. Foi meu paradigma preferido do semestre, porém ao mesmo tempo o que tive menos tempo para me dedicar. Gostaria muito de ver uma ascensão de sistemas multiagentes no mundo da programação, pois é incrível. |  
 
 ### Fragilidades
 |Nome do Membro | Fragilidades | 
 | -------- | -- | 
-| Artur Vinicius Dias Nunes | Os agentes tinha comportamento diferentes dependendo de qual local ele eram gerados, ou se tinha outro agentes proximos a eles. |  
+| Artur Vinicius Dias Nunes | Os agentes tinha comportamento diferentes dependendo de qual local ele eram gerados, ou se tinha outro agentes próximos a eles. |  
 | Caio César Oliveira | Por algum motivo que o grupo não descobriu algumas vezes o pescador foca no lixo e não sai de perto dele. |  
 | João Pedro Alves da Silva Chaves | Em alguns casos os cardumes não estão se afastando dá água poluída. | 
 | João Vitor de Souza Durso  | É muito dificíl debugar comportamentos inesperados do código. Você programa os agentes individualmente pensando que os agentes irão se comportar de tal maneira, mas quando você coloca tudo para se conectar, você percebe diversas reações que não imaginou. |  
 |Leticia Assunção Aires Moreira  | As funções desenvolvidas devem levar em consideração todos os outros agentes que podem ser impactados. Um exemplo disso é que, após implementar a busca do pescador pelos botos, ele passa a se manter próximo do lixo. Contudo, antes de tal funcionalidade, o pescador se movimentava normalmente.  | 
-| Luan Vasco Cavalcante  |  |
+| Luan Vasco Cavalcante  | O esgoto se espalha muito rápido com a estratégia de se tem alguém sujo comigo eu me sujo também. |
 | Victor Rayan Adriano Ferreira  | Poderíamos ter feito uma pesquisa maior sobre golfinhos e migrações para deixar nosso trabalho mais aproximado de situações da vida real. | 
 | Christian Fleury Alencar Siqueira | Como principal fragilidade tive o tempo da entrega, que apesar de não ter sido curto, por conflitar com trabalhos finais de outras disciplinas, acabou ficando bem pesado. Também tive dificuldade de utilizar o MESA, que apesar de bem simplifciado, é bem diferente do JADE que vemos nas aulas, e então apenas os conceitos são aproveitados, mas a programção em si tem que ser aprendida do zero. |  
 
@@ -145,7 +145,7 @@ python main.py
 | João Pedro Alves da Silva Chaves | Seria interessante adicionar outras espécies como agentes. | 
 | João Vitor de Souza Durso  | É possível melhorar o efeito dos poluentes, dando movimento a eles, tendo em vista que o rio se move, levando consigo os dejetos. Dessa forma, ficaria mais próximo da realidade. |  
 |Leticia Assunção Aires Moreira  | Uma possível melhoria é a redução da dispersão do esgoto. | 
-| Luan Vasco Cavalcante  |  |
+| Luan Vasco Cavalcante  | Uma possível melhoria pros trabalhos futuros seria a comunicação entre agentes. |
 | Victor Rayan Adriano Ferreira  | Implementar modelos de agentes mais avançados, exemplo incluir modelos como inteligência artificial, aprendizado por reforço para simular comportamentos mais complexos. | 
 | Christian Fleury Alencar Siqueira | Quando o cardume morre por ser cerdado por poluição, seria interessante, na função takeDown, que o cardume avisasse os outros cardumes de onde morreu para que os outros pudessem evitar aquela área. É claro que isso daria poderes de telecinese para os cardumes, mas a dinâmica desses agentes ficaria muito interessante. |  
 
